@@ -1,4 +1,4 @@
-1.Download the project from https://github.com/vspasov/CashDeskModule, the JAR file and Postman collenction.
+1.Download the project, the JAR file and Postman collenction.
 
 2.Build the project:
    mvn clean install
