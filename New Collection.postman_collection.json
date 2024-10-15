@@ -1,0 +1,206 @@
+{
+	"info": {
+		"_postman_id": "9991c089-5e88-4144-a70c-8f108af3c9d2",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16063245"
+	},
+	"item": [
+		{
+			"name": "Deposit - BGN",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "FIB-X-AUTH",
+						"value": "f9Uie8nNf112hx8s",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"currency\": \"BGN\",\r\n  \"operationType\": \"deposit\",\r\n  \"amount\": 600,\r\n  \"denominations\": {\r\n    \"10\": 10,\r\n    \"50\": 10\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/cash-operation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"cash-operation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Withdrawal - BGN",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "FIB-X-AUTH",
+						"value": "f9Uie8nNf112hx8s",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"currency\": \"BGN\",\r\n  \"operationType\": \"withdrawal\",\r\n  \"amount\": 100,\r\n  \"denominations\": {\r\n    \"10\": 5,\r\n    \"50\": 1\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/cash-operation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"cash-operation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Withdrawal - EUR",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "FIB-X-AUTH",
+						"value": "f9Uie8nNf112hx8s",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"currency\": \"EUR\",\r\n  \"operationType\": \"withdrawal\",\r\n  \"amount\": 500,\r\n  \"denominations\": {\r\n    \"50\": 10\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/cash-operation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"cash-operation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deposit - EUR",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "FIB-X-AUTH",
+						"value": "f9Uie8nNf112hx8s",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"currency\": \"EUR\",\r\n  \"operationType\": \"deposit\",\r\n  \"amount\": 200,\r\n  \"denominations\": {\r\n    \"20\": 5,\r\n    \"50\": 2\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/cash-operation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"cash-operation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Balance",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "FIB-X-AUTH",
+						"value": "f9Uie8nNf112hx8s",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/cash-balance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"cash-balance"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
